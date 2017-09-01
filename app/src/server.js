@@ -10,8 +10,8 @@ app.use(express.static('html', {
 
 //send index.html as homepage 
 app.get('/', function(req, res) {
-  //  res.sendFile(__dirname + '/index.html');
-  res.send("Hello World.......!");
+  res.sendFile(__dirname + '/index.html');
+  //res.send("Hello World.......!");
 });
 
 //route for user login/register
